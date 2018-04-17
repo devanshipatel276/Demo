@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/anticipate_overshoot_interpolator">
+
+
+    <translate
+            android:duration="2000"
+    android:fromYDelta="-50%p"
+          android:toYDelta="0" />
+</set>-->
+
+
+<set android:ordering="sequentially"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<set>
+    <objectAnimator
+        android:propertyName="x"
+        android:duration="500"
+        android:valueTo="400"
+        android:valueType="intType"/>
+    <objectAnimator
+        android:propertyName="y"
+        android:duration="500"
+        android:valueTo="300"
+        android:valueType="intType"/>
+</set>
+<objectAnimator
+    android:propertyName="alpha"
+    android:duration="500"
+    android:valueTo="1f"/>
+</set>
